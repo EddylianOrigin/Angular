@@ -1,0 +1,9 @@
+<svg height="20" width="135" xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <rect fill="#5d5d5d" height="20" id="svg_1" rx="7" ry="7" stroke="#5d5d5d" stroke-width="1.5" width="130" x="0" y="0"/>
+        <rect fill="#d8604b" height="20" id="svg_2" rx="7" ry="7" stroke="#d8604b" stroke-width="1.5" width="40" x="92" y="0"/>
+        <rect fill="#d8604b" height="20" id="svg_3" stroke="#d8604b" stroke-width="1.5" width="22" x="92" y="0"/>
+        <text fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_4" stroke="#5d5d5d" stroke-width="0" text-anchor="start" x="6" xml:space="preserve" y="14">documentation</text>
+        <text fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_5" stroke="#5d5d5d" stroke-width="0" style="text-anchor: middle" text-anchor="middle" x="112" xml:space="preserve" y="14">0%</text>
+    </g>
+</svg>
