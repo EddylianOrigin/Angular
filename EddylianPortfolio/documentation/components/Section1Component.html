@@ -38,7 +38,7 @@
   <li>Components</li>
   <li
   >
-  AppComponent</li>
+  Section1Component</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -64,7 +64,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/app.component.ts</code>
+    <code>src/app/section1/section1.component.ts</code>
 </p>
 
 
@@ -89,19 +89,19 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-root</code></td>
+                <td class="col-md-9"><code>app-section1</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>./app.component.css</code></td>
+                <td class="col-md-9"><code>./section1.component.css</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./app.component.html</code></td>
+                <td class="col-md-9"><code>./section1.component.html</code></td>
             </tr>
 
 
@@ -115,33 +115,6 @@
     </table>
 </section>
 
-    <section>
-    <h3 id="index">Index</h3>
-    <table class="table table-sm table-bordered index-table">
-        <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>Properties</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                <a href="#title" >title</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-
-
-
-
-
-
-        </tbody>
-    </table>
-</section>
 
 
 
@@ -149,72 +122,71 @@
 
 
 
-    <section>
-
-    <h3 id="inputs">
-        Properties
-    </h3>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="title"></a>
-                    <span class="name">
-                        <span ><b>title</b></span>
-                        <a href="#title"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>&#x27;EddylianPortfolio&#x27;</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a class="link-to-prism" data-line="9" href="">src/app/app.component.ts:9</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-</section>
 
 </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component} from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
 
 @Component({
-  selector: &#x27;app-root&#x27;,
-  templateUrl: &#x27;./app.component.html&#x27;,
-  styleUrls: [&#x27;./app.component.css&#x27;]
+  selector: &#x27;app-section1&#x27;,
+  templateUrl: &#x27;./section1.component.html&#x27;,
+  styleUrls: [&#x27;./section1.component.css&#x27;]
 })
-export class AppComponent {
-  title &#x3D; &#x27;EddylianPortfolio&#x27;;
+export class Section1Component {
+
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;app-navbar&gt;&lt;/app-navbar&gt;
-&lt;app-section1&gt;&lt;/app-section1&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;split level1&quot;&gt;
+  &lt;div class&#x3D;&quot;centered&quot;&gt;
+    &lt;video autoplay id&#x3D;&quot;myVideo&quot; loop muted&gt;
+      &lt;source src&#x3D;&quot;assets/video/Vid.mp4&quot; type&#x3D;&quot;video/mp4&quot;&gt;
+      Your browser does not support HTML5 video.
+    &lt;/video&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;split level2&quot;&gt;
+  &lt;div class&#x3D;&quot;centered&quot;&gt;
+    Good
+  &lt;/div&gt;
+&lt;/div&gt;
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
-                    <code>./app.component.css</code>
+                    <code>./section1.component.css</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">/* Split the screen in half */
+.split {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  top: -16px;
+  display: block;
+}
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: relative;
+  left: 15px;
+  bottom: 0;
+  /**min-width: 10%;**/
+  left: 28%;
+  width: 40%;
+  box-shadow: inset 0 12px 8px -10px rgba(0,0,0,.2);
+  z-index: 1;
+  display: block;
+}
+
+.level2 {
+
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -242,10 +214,10 @@ export class AppComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><app-navbar></app-navbar><app-section1></app-section1></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="split level1">  <div class="centered">    <video autoplay id="myVideo" loop muted>      <source src="assets/video/Vid.mp4" type="video/mp4">      Your browser does not support HTML5 video.    </video>  </div></div><div class="split level2">  <div class="centered">    Good  </div></div></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'Section1Component', 'selector': 'app-section1'}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'AppComponent'};
+    var ACTUAL_COMPONENT = {'name': 'Section1Component'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -291,7 +263,7 @@ export class AppComponent {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'AppComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'Section1Component.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

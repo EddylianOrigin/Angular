@@ -141,7 +141,7 @@ export class NavbarComponent {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;p&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;p class&#x3D;&quot;nav1&quot;&gt;
   &lt;mat-toolbar color&#x3D;&quot;primary&quot;&gt;
     &lt;mat-toolbar-row&gt;
       &lt;span&gt;EDDYLIAN&lt;/span&gt;
@@ -152,19 +152,7 @@ export class NavbarComponent {
     &lt;/mat-toolbar-row&gt;
   &lt;/mat-toolbar&gt;
 &lt;/p&gt;
-&lt;div class&#x3D;&quot;split level1&quot;&gt;
-  &lt;div class&#x3D;&quot;centered&quot;&gt;
-  &lt;video autoplay id&#x3D;&quot;myVideo&quot; loop muted&gt;
-    &lt;source src&#x3D;&quot;assets/video/Vid.mp4&quot; type&#x3D;&quot;video/mp4&quot;&gt;
-    Your browser does not support HTML5 video.
-  &lt;/video&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class&#x3D;&quot;split level2&quot;&gt;
-  &lt;div class&#x3D;&quot;centered&quot;&gt;
-  Good
-  &lt;/div&gt;
-&lt;/div&gt;
+
 </code></pre>
     </div>
 
@@ -174,16 +162,11 @@ export class NavbarComponent {
                 </p>
                 <pre class="line-numbers"><code class="language-scss">.example-spacer {
   flex: 1 1 auto;
+
 }
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-  position: fixed;
-  right: 750px;
-  top: 80px;
-  bottom: 0;
-  /**min-width: 10%;**/
-  width: 500px;
-  min-height: 30%;
+
+p {
+  top: -16px;
 }
 
 /* Add some content at the bottom of the video/page */
@@ -194,6 +177,7 @@ export class NavbarComponent {
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+
 }
 
 /* Style the button used to pause/play the video */
@@ -212,16 +196,7 @@ export class NavbarComponent {
   color: black;
 }
 
-/* Split the screen in half */
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
+
 
 /* Control the left side */
 .level1 {
@@ -229,14 +204,7 @@ export class NavbarComponent {
 
 
 }
-.level2 {
-  up: 0;
-  right: 0;
-  down: 0;
-  left: 0;
 
-
-}
 </code></pre>
     </div>
 
@@ -265,8 +233,8 @@ export class NavbarComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><p>  <mat-toolbar color="primary">    <mat-toolbar-row>      <span>EDDYLIAN</span>      <span class="example-spacer"></span>      <button aria-label="Example icon-button with menu icon" class="example-icon" mat-icon-button>        <mat-icon>menu</mat-icon>      </button>    </mat-toolbar-row>  </mat-toolbar></p><div class="split level1">  <div class="centered">  <video autoplay id="myVideo" loop muted>    <source src="assets/video/Vid.mp4" type="video/mp4">    Your browser does not support HTML5 video.  </video>    </div></div><div class="split level2">  <div class="centered">  Good  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'NavbarComponent', 'selector': 'app-navbar'}];
+        var COMPONENT_TEMPLATE = '<div><p class="nav1">  <mat-toolbar color="primary">    <mat-toolbar-row>      <span>EDDYLIAN</span>      <span class="example-spacer"></span>      <button aria-label="Example icon-button with menu icon" class="example-icon" mat-icon-button>        <mat-icon>menu</mat-icon>      </button>    </mat-toolbar-row>  </mat-toolbar></p></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'Section1Component', 'selector': 'app-section1'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'NavbarComponent'};
 </script>

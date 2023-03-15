@@ -12,17 +12,17 @@ Copyright (c) 2018, Adam Bradley
 <defs>
 <font horiz-adv-x="416" id="Ionicons" >
   <font-face
-    ascent="448"
-    bbox="-0.75 -64 512.487 448"
-    descent="-64"
     font-family="Ionicons"
+    ascent="448"
     font-stretch="normal"
-    font-weight="400"
+    bbox="-0.75 -64 512.487 448"
     panose-1="2 0 5 3 0 0 0 0 0 0"
+    descent="-64"
+    font-weight="400"
     underline-position="-51.2"
     underline-thickness="25.6"
-    unicode-range="U+F100-F4CD"
     units-per-em="512"
+    unicode-range="U+F100-F4CD"
   />
     <missing-glyph />
     <glyph d="M167 330l172 -170c4 -4 1 -11 -5 -11v0c-10 0 -23 -1 -29 -7c-8 -8 -88 -86 -126 -123c-11 -10 -28 -10 -39 0l-131 126c-11 11 -12 29 -1 40l85 84l-50 49c-19 19 -19 49 0 68v0c9 9 22 14 34 14s25 -5 34 -14l56 -56v0zM64 338l48 -49l29 28l-50 49c-4 4 -9 6 -14 6

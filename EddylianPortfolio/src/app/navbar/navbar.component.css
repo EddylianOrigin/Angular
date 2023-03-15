@@ -1,15 +1,10 @@
 .example-spacer {
   flex: 1 1 auto;
+
 }
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-  position: fixed;
-  right: 750px;
-  top: 80px;
-  bottom: 0;
-  /**min-width: 10%;**/
-  width: 500px;
-  min-height: 30%;
+
+p {
+  top: -16px;
 }
 
 /* Add some content at the bottom of the video/page */
@@ -20,6 +15,7 @@
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+
 }
 
 /* Style the button used to pause/play the video */
@@ -38,16 +34,7 @@
   color: black;
 }
 
-/* Split the screen in half */
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
+
 
 /* Control the left side */
 .level1 {
@@ -55,11 +42,4 @@
 
 
 }
-.level2 {
-  up: 0;
-  right: 0;
-  down: 0;
-  left: 0;
 
-
-}
