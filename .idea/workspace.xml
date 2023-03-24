@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc5542e7-880e-468b-ad14-9294ddc8688e" name="Default Changelist" comment="Angular Projekt-Training">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Angular.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wetter-Projekt/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +53,7 @@
       <workItem from="1675254947002" duration="224000" />
       <workItem from="1676472460905" duration="5000" />
       <workItem from="1676612190306" duration="7000" />
+      <workItem from="1679689892146" duration="1115000" />
     </task>
     <task id="LOCAL-00001" summary="Angular Projekt-Training">
       <created>1675252138161</created>
