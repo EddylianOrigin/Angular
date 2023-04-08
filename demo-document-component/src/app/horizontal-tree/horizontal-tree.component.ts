@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {NodeService} from "../service/node.service";
 import {TreeNode} from "primeng/api";
+import { DialogModule } from 'primeng/dialog';
 
 @Component({
   selector: 'app-horizontal-tree',
@@ -8,8 +9,10 @@ import {TreeNode} from "primeng/api";
   styleUrls: ['./horizontal-tree.component.css']
 })
 export class HorizontalTreeComponent implements OnInit {
-
+  displayDialog: boolean = false;
   files1: TreeNode[] = [];
+  visible: boolean = false;
+
 
   constructor(private nodeService: NodeService) {
   }
@@ -33,7 +36,13 @@ export class HorizontalTreeComponent implements OnInit {
                 children: [
                   {
                     label: 'file1',
-                    icon: 'pi-file'
+                    icon: 'pi-file',
+                    data: 'file1'
+                  },
+                  {
+                    label: 'file2',
+                    icon: 'pi-file',
+                    data: 'file2'
                   }
                 ]
               },
@@ -42,8 +51,9 @@ export class HorizontalTreeComponent implements OnInit {
                 icon: 'pi pi-folder',
                 children: [
                   {
-                    label: 'file2',
-                    icon: 'pi-file'
+                    label: 'file3',
+                    icon: 'pi-file',
+                    data: 'file3'
                   }
                 ]
               },
@@ -60,8 +70,9 @@ export class HorizontalTreeComponent implements OnInit {
                 collapsedIcon: 'pi pi-folder',
                 children: [
                   {
-                    label: 'file3',
-                    icon: 'pi-file'
+                    label: 'file4',
+                    icon: 'pi-file',
+                    data: 'file4'
                   }
                 ]
               },
@@ -77,8 +88,9 @@ export class HorizontalTreeComponent implements OnInit {
                 icon: 'pi pi-folder',
                 children: [
                   {
-                    label: 'file4',
-                    icon: 'pi-file'
+                    label: 'file5',
+                    icon: 'pi-file',
+                    data: 'file5'
                   }
                 ]
               },
@@ -87,8 +99,9 @@ export class HorizontalTreeComponent implements OnInit {
                 icon: 'pi pi-folder',
                 children: [
                   {
-                    label: 'file5',
-                    icon: 'pi-file'
+                    label: 'file6',
+                    icon: 'pi-file',
+                    data: 'file6'
                   }
                 ]
               },
@@ -97,8 +110,9 @@ export class HorizontalTreeComponent implements OnInit {
                 icon: 'pi pi-folder',
                 children: [
                   {
-                    label: 'file6',
-                    icon: 'pi-file'
+                    label: 'file7',
+                    icon: 'pi-file',
+                    data: 'file7'
                   }
                 ]
               },
@@ -108,4 +122,10 @@ export class HorizontalTreeComponent implements OnInit {
       },
     ]
   }
+  showDialog() {
+    this.displayDialog = true;
+    this.visible = true;
+    console.log("hallo");
+  }
+
 }
