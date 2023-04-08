@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from "@angular/forms";
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule} from "@angular/forms";
 
-import { AppComponent } from './app.component';
-import { TodosComponent } from './componeents/todos/todos.component';
+import {AppComponent} from './app.component';
+import {TodosComponent} from './componeents/todos/todos.component';
 
 @NgModule({
   declarations: [
@@ -17,4 +17,5 @@ import { TodosComponent } from './componeents/todos/todos.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
