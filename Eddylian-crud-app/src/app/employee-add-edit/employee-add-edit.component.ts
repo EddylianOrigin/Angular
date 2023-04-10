@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {FormBuilder, FormGroup} from "@angular/forms";
+import {EmployeeService} from "../services/employee.service";
+import {DialogRef} from "@angular/cdk/dialog";
 
 @Component({
   selector: 'app-employee-add-edit',
@@ -17,7 +19,7 @@ export class EmployeeAddEditComponent {
     'Post Graduate',
   ]
 
-  constructor(private _fb: FormBuilder) {
+  constructor(private _fb: FormBuilder, private _empService: EmployeeService, private _dialogRef: DialogRef<EmployeeAddEditComponent>) {
     this.empForm = this._fb.group({
       firstName: '',
       lastName: '',
@@ -29,5 +31,19 @@ export class EmployeeAddEditComponent {
       experience: '',
       package: '',
     })
+  }
+
+  onFormSubmit() {
+    if(this.empForm.valid) {
+      this._empService.addEmployee(this.empForm.value).subscribe({
+        next: (value:any) => {
+        alert('Employee added successfully');
+        this._dialogRef.close();
+        },
+      error: (err:any) => {
+          console.error(err);
+      }
+      })
+    }
   }
 }
