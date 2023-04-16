@@ -18,16 +18,40 @@
   },
   "employees": [
     {
-      "firstName": "",
-      "lastName": "",
-      "email": "",
-      "dob": "",
+      "firstName": "eddy",
+      "lastName": "Feulefack",
+      "email": "eddy@gmail.com",
+      "dob": "2023-04-03T22:00:00.000Z",
+      "gender": "female",
+      "education": "Diploma",
+      "company": "firms",
+      "experience": 3,
+      "package": 6,
+      "id": 2
+    },
+    {
+      "firstName": "eddy",
+      "lastName": "Eddy",
+      "email": "eddy@gmail.com",
+      "dob": "2023-04-17T22:00:00.000Z",
+      "gender": "male",
+      "education": "Intermediate",
+      "company": "toyota",
+      "experience": 15,
+      "package": 52,
+      "id": 4
+    },
+    {
+      "firstName": "hi",
+      "lastName": "top",
+      "email": "ss@gmail.com",
+      "dob": "2023-04-03T22:00:00.000Z",
       "gender": "",
-      "education": "",
-      "company": "",
-      "experience": "",
-      "package": "",
-      "id": 1
+      "education": "Diploma",
+      "company": "dsds",
+      "experience": 3,
+      "package": 3,
+      "id": 5
     }
   ]
 }
