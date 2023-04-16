@@ -5,3 +5,91 @@
     ADD EMPLOYEE
   </button>
 </mat-toolbar>
+
+<div class="main-body">
+
+</div>
+<mat-form-field>
+  <mat-label>Filter</mat-label>
+  <input #input (keyup)="applyFilter($event)" matInput placeholder="Ex. Mia">
+</mat-form-field>
+
+<div class="table-container">
+  <table [dataSource]="dataSource" mat-table matSort>
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="id">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> ID </th>
+      <td *matCellDef="let row" mat-cell> {{row.id}} </td>
+    </ng-container>
+
+    <!-- Progress Column -->
+    <ng-container matColumnDef="firstName">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> First Name </th>
+      <td *matCellDef="let row" mat-cell> {{row.firstName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="lastName">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> Last Name </th>
+      <td *matCellDef="let row" mat-cell> {{row.lastName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> Email </th>
+      <td *matCellDef="let row" mat-cell> {{row.email}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="dob">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> Date of Birth </th>
+      <td *matCellDef="let row" mat-cell> {{row.dob | date}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="gender">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> Gender </th>
+      <td *matCellDef="let row" mat-cell> {{row.gender}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="education">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> First Name </th>
+      <td *matCellDef="let row" mat-cell> {{row.education}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="company">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> company </th>
+      <td *matCellDef="let row" mat-cell> {{row.company}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="experience">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> Experience </th>
+      <td *matCellDef="let row" mat-cell> {{row.experience}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="package">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> package </th>
+      <td *matCellDef="let row" mat-cell> {{row.package | currency:'EUR'}}L </td>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> Action </th>
+      <td *matCellDef="let row" mat-cell>
+        <button (click)="openEditForm(row)" color="primary" mat-icon-button>
+        <mat-icon>edit</mat-icon>
+      </button>
+        <button (click)="deleteEmployee(row.id)" color="warn" mat-icon-button>
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+    <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>
+
+    <!-- Row shown when there is no matching data. -->
+    <tr *matNoDataRow class="mat-row">
+      <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+    </tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+</div>
+
