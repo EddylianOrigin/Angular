@@ -42,15 +42,15 @@
       "id": 4
     },
     {
-      "firstName": "hi",
-      "lastName": "top",
-      "email": "ss@gmail.com",
-      "dob": "2023-04-03T22:00:00.000Z",
-      "gender": "",
-      "education": "Diploma",
-      "company": "dsds",
-      "experience": 3,
-      "package": 3,
+      "firstName": "erzier",
+      "lastName": "",
+      "email": "",
+      "dob": "",
+      "gender": "female",
+      "education": "",
+      "company": "",
+      "experience": "",
+      "package": "",
       "id": 5
     }
   ]
